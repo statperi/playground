@@ -15,21 +15,21 @@
 <body style='margin: 0; overflow: hidden;'>
     <a-scene vr-mode-ui="enabled: false"
              embedded
-             arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-
+             arjs='sourceType: webcam; 
+                    sourceWidth:1280; 
+                    sourceHeight:960; 
+                    displayWidth: 1280; 
+                    displayHeight: 960; 
+                    debugUIEnabled: false;'>
 
         <a-assets>
             <a-asset-item id="animatedModel" src="./assets/dancer_girl/scene.gltf"></a-asset-item>
         </a-assets>
 
-
         <a-camera id="camera"
-                  gps-camera rotation-reader
                   position="0 8 8"
-                  raycaster="objects: .cantap"
-                  shadow>
+                  raycaster="objects: .cantap">
         </a-camera>
-
 
         <a-entity 
             light="type: directional;
