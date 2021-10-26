@@ -19,12 +19,15 @@
 
         <a-camera gps-camera rotation-reader></a-camera>
 
-        <a-entity gltf-model="./assets/dancer_girl/scene.gltf" 
-                  rotation="0 0 0" 
-                  scale="0.025 0.025 0.025" 
+        <a-entity gltf-model="./assets/dancer_girl/scene.gltf"
+                  rotation="0 0 0"
+                  scale="0.025 0.025 0.025"
                   look-at="[gps-camera]"
-                  animation-mixer> 
+                  animation-mixer>
         </a-entity>
+
+        <a-plane id="ground" position="0 0 0" rotation="-90 0 0" width="50" height="50" material="shader: shadow" shadow></a-plane>
+
     </a-scene>
 </body>
 </html>
