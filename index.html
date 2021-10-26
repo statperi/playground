@@ -17,17 +17,46 @@
              embedded
              arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
-        <a-camera gps-camera rotation-reader></a-camera>
 
-        <a-entity gltf-model="./assets/dancer_girl/scene.gltf"
-                  rotation="0 0 0"
-                  scale="0.025 0.025 0.025"
-                  look-at="[gps-camera]"
-                  animation-mixer>
+        <a-assets>
+            <a-asset-item id="animatedModel" src="./assets/dancer_girl/scene.gltf"></a-asset-item>
+        </a-assets>
+
+
+        <a-camera id="camera"
+                  gps-camera rotation-reader
+                  position="0 8 8"
+                  raycaster="objects: .cantap"
+                  shadow>
+        </a-camera>
+
+
+        <a-entity 
+            light="type: directional;
+             intensity: 0.8;
+             castShadow: true;
+             shadowMapHeight:2048;
+             shadowMapWidth:2048;
+             shadowCameraTop: 10;
+             target: #model;"
+            position="1 4.3 2.5"
+            shadow>
         </a-entity>
 
-        <a-plane id="ground" position="0 0 0" rotation="-90 0 0" width="50" height="50" material="shader: shadow" shadow></a-plane>
+        <a-light type="ambient" intensity="0.5"></a-light>
 
+        <a-entity id="model"
+                  gltf-model="#animatedModel"
+                  class="cantap"
+                  position="10 -4 -10"
+                  scale="0.05 0.05 0.05"
+                  look-at="[gps-camera]"
+                  animation-mixer
+                  shadow>
+        </a-entity>
+
+        <!--width="50" height="50"-->
+        <a-plane id="ground" position="0 0 0" rotation="-90 0 0" material="shader: shadow" shadow></a-plane>
     </a-scene>
 </body>
 </html>
