@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\dancer_girl",
+    "\\styles"
   ],
+  "SelectedNode": "\\index_latest.html",
   "PreviewInSolutionExplorer": false
 }
