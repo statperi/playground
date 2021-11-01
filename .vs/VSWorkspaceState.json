@@ -2,9 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\dancer_girl",
+    "\\assets\\ImageTracking",
+    "\\assets\\ImageVideo",
+    "\\assets\\ImageVideo\\bear",
+    "\\assets\\ImageVideo\\Grattan",
+    "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\index_latest.html",
+  "SelectedNode": "\\assets\\ImageVideo\\bear",
   "PreviewInSolutionExplorer": false
 }
