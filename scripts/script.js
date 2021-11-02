@@ -13,7 +13,9 @@ window.onload = () => {
 
 
 function animate(action) {
-    $('.skeleton')[0].setAttribute('animation-mixer', action);
+    var skeleton = $('.skeleton')[0];
+    skeleton.setAttribute('animation-mixer', action);
+    skeleton.removeAttribute('animation-mixer');
 }
 
 

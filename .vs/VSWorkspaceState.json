@@ -2,13 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\ImageTracking",
     "\\assets\\ImageVideo",
-    "\\assets\\ImageVideo\\bear",
-    "\\assets\\ImageVideo\\Grattan",
+    "\\assets\\ImageVideo\\ArMarker",
     "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\assets\\ImageVideo\\bear",
+  "SelectedNode": "\\assets\\ImageVideo",
   "PreviewInSolutionExplorer": false
 }
