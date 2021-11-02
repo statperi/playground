@@ -1,21 +1,29 @@
 window.onload = () => {
 
-    document.querySelector('button[data-action="attack"]').addEventListener('click', function () {
-        console.log('attack');
-        animate('clip: Skeleton_Attak; loop: once; duration:1');
+    document.querySelector('button[data-action="skeleton"]').addEventListener('click', function () {
+        console.log('skeleton');
+
+        var skeleton = $('.skeleton')[0];
+        var bear = $('.bear')[0];
+
+        animate(skeleton, 'clip: Skeleton_Attak; loop: once; duration:1');
+        animate(bear, 'clip: Arm_Bear|Death_1; loop: once; duration:1');
     });
 
-    document.querySelector('button[data-action="damage"]').addEventListener('click', function () {
-        console.log('die');
-        animate('clip: Skeleton_Death; loop: once; duration:1; clampWhenFinished:true;');
+    document.querySelector('button[data-action="bear"]').addEventListener('click', function () {
+        console.log('bear');
+
+        var skeleton = $('.skeleton')[0];
+        animate(bear, 'clip: Arm_Bear|attack_1; loop: once; duration:1');
+        animate(skeleton, 'clip: Skeleton_Death; loop: once; duration:1;');
     });
 };
 
 
-function animate(action) {
-    var skeleton = $('.skeleton')[0];
-    skeleton.setAttribute('animation-mixer', action);
-    skeleton.removeAttribute('animation-mixer');
+function animate(model, action) {
+    // var skeleton = $('.skeleton')[0];
+    model.setAttribute('animation-mixer', action);
+    model.removeAttribute('animation-mixer');
 }
 
 
