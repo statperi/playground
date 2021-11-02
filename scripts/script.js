@@ -5,7 +5,7 @@ window.onload = () => {
         animate('clip: Skeleton_Attak; loop: once; duration:1');
     });
 
-    document.querySelector('button[data-action="attack"]').addEventListener('click', function () {
+    document.querySelector('button[data-action="damage"]').addEventListener('click', function () {
         console.log('die');
         animate('clip: Skeleton_Death; loop: once; duration:1; clampWhenFinished:true;');
     });
