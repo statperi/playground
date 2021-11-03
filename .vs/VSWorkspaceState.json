@@ -2,11 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\ImageVideo",
-    "\\assets\\ImageVideo\\ArMarker",
+    "\\assets\\ImageVideo\\QrMarkers",
+    "\\assets\\skeleton",
     "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\assets\\ImageVideo",
+  "SelectedNode": "\\scripts\\script.js",
   "PreviewInSolutionExplorer": false
 }
