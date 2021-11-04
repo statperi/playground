@@ -5,7 +5,7 @@ window.onload = () => {
         // var skeleton2 = $('.skeleton2')[0];
         var bear = $('.bear')[0];
 
-        animate(skeleton, 'clip: Skeleton_Attak; loop: once; duration:3; clampWhenFinished: true;');
+        animate(skeleton, 'clip: Skeleton_Attak; loop: once; duration:1; clampWhenFinished: true;');
         // animate(skeleton2, 'clip: Skeleton_Death; loop: once; duration:3; clampWhenFinished: true;');
         animate(bear, 'clip: Arm_Bear|Death_1; loop: once; duration:3; clampWhenFinished: true;');
     });
