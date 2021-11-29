@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\skeleton",
     "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\scripts\\script.js",
+  "SelectedNode": "\\scripts\\gesture-handler.js",
   "PreviewInSolutionExplorer": false
 }
