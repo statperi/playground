@@ -25,10 +25,12 @@
             <a-asset-item id="animated-bear" src="assets/bear_male/scene.gltf"></a-asset-item>
         </a-assets>
 
+        <!--url="./assets/ImageVideo/QrMarkers/bear.patt"-->
+
         <a-marker id="animated-marker-skeleton"
                   type="pattern"
                   preset="custom"
-                  url="./assets/ImageVideo/QrMarkers/bear.patt"
+                  url="./assets/ImageVideo/ArMarkers/marker.patt"
                   raycaster="objects: .clickable"
                   emitevents="true"
                   cursor="fuse: false; rayOrigin: mouse;">
@@ -59,7 +61,7 @@
             <!--scale="0.008390502966511827 0.008390502966511827 0.008390502966511827"-->
 
             <a-entity id="bowser-model"
-                      scale="0.108390502966511827 0.108390502966511827 0.108390502966511827"
+                      scale="0.058390502966511827 0.058390502966511827 0.058390502966511827"
                       animation-mixer="clip: Arm_Bear|Idle_2; loop: repeat;"
                       gltf-model="#animated-bear"
                       class="clickable bear"
