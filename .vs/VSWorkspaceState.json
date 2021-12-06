@@ -2,9 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\ImageTracking",
+    "\\assets\\ImageVideo",
+    "\\assets\\ImageVideo\\ArMarker",
+    "\\assets\\ImageVideo\\BearMarker",
+    "\\assets\\ImageVideo\\QrMarkers",
     "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\scripts\\gesture-handler.js",
+  "SelectedNode": "\\assets\\ImageVideo\\BearMarker\\bearqr.patt",
   "PreviewInSolutionExplorer": false
 }
