@@ -10,17 +10,17 @@ AFRAME.registerComponent("gesture-handler", {
         this.handleScale = this.handleScale.bind(this);
         this.handleRotation = this.handleRotation.bind(this);
 
-        // this.isVisible = false;
+        this.isVisible = false;
         this.initialScale = this.el.object3D.scale.clone();
         this.scaleFactor = 1;
 
-        //this.el.sceneEl.addEventListener("markerFound", (e) => {
-        //    this.isVisible = true;
-        //});
+        this.el.sceneEl.addEventListener("markerFound", (e) => {
+            this.isVisible = true;
+        });
 
-        //this.el.sceneEl.addEventListener("markerLost", (e) => {
-        //    this.isVisible = false;
-        //});
+        this.el.sceneEl.addEventListener("markerLost", (e) => {
+            this.isVisible = false;
+        });
     },
 
     update: function () {
@@ -39,6 +39,8 @@ AFRAME.registerComponent("gesture-handler", {
     },
 
     handleRotation: function (event) {
+        console.log('visible: ', this.isVisible);
+
         // if (this.isVisible) {
             this.el.object3D.rotation.y +=
                 event.detail.positionChange.x * this.data.rotationFactor;
