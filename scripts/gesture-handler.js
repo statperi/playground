@@ -41,16 +41,16 @@ AFRAME.registerComponent("gesture-handler", {
     handleRotation: function (event) {
         console.log('visible: ', this.isVisible);
 
-        // if (this.isVisible) {
+         if (this.isVisible) {
             this.el.object3D.rotation.y +=
                 event.detail.positionChange.x * this.data.rotationFactor;
             //this.el.object3D.rotation.x +=
             //    event.detail.positionChange.y * this.data.rotationFactor;
-        // }
+         }
     },
 
     handleScale: function (event) {
-        // if (this.isVisible) {
+         if (this.isVisible) {
             this.scaleFactor *=
                 1 + event.detail.spreadChange / event.detail.startSpread;
 
@@ -62,6 +62,6 @@ AFRAME.registerComponent("gesture-handler", {
             this.el.object3D.scale.x = this.scaleFactor * this.initialScale.x;
             this.el.object3D.scale.y = this.scaleFactor * this.initialScale.y;
             this.el.object3D.scale.z = this.scaleFactor * this.initialScale.z;
-        // }
+         }
     },
 });
