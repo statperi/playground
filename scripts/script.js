@@ -8,7 +8,7 @@ window.onload = () => {
             action = action == "Agression" ? "Swim_Idle_RM" : "Agression";
             var config = {
                 action: action,
-                clip:'Arm_Bear |'+ action,
+                clip:'Arm_Bear|'+ action,
                 loop: 'once',
                 duration: 3,
                 clampWhenFinished: true
