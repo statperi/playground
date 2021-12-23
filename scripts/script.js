@@ -1,30 +1,46 @@
+var action = "Swim_Idle_RM";
+
 window.onload = () => {
 
-    document.querySelector('button[data-action="skeleton"]').addEventListener('click', function () {
-        var skeleton = $('.skeleton')[0];
-        // var skeleton2 = $('.skeleton2')[0];
+    document.querySelector('button[data-action="aggression-swim"]').addEventListener('click', function () {
         var bear = $('.bear')[0];
+        if (bear) {
+            action = action == "Agression" ? "Swim_Idle_RM" : "Agression";
+            var config = {
+                action: action,
+                clip:'Arm_Bear |'+ action,
+                loop: 'once',
+                duration: 3,
+                clampWhenFinished: true
+            }
 
-        animate(skeleton, 'clip: Skeleton_Attak; loop: once; duration:1; clampWhenFinished: true;');
-        // animate(skeleton2, 'clip: Skeleton_Death; loop: once; duration:3; clampWhenFinished: true;');
-        animate(bear, 'clip: Arm_Bear|Death_1; loop: once; duration:3; clampWhenFinished: true;');
+            //animate(bear, 'clip: Arm_Bear|Death_1; loop: once; duration:3; clampWhenFinished: true;');
+            animate(bear, config);
+        }
     });
 
-    document.querySelector('button[data-action="bear"]').addEventListener('click', function () {
-        var skeleton = $('.skeleton')[0];
-        // var skeleton2 = $('.skeleton2')[0];
-        var bear = $('.bear')[0];
+    //todo : rotate/cycle through the animations
+    //document.querySelector('button[data-action="cycling"]').addEventListener('click', function () {
+    //    var bear = $('.bear')[0];
 
-        // animate(skeleton2, 'clip: Skeleton_Attak; loop: once; duration:3; clampWhenFinished: true;');
-        animate(bear, 'clip: Arm_Bear|attack_1; loop: once; duration:3; clampWhenFinished: true;');
-        animate(skeleton, 'clip: Skeleton_Death; loop: once; duration:3; clampWhenFinished: true;');
-    });
+    //    if (bear) 
+    //        animate(bear, 'clip: Arm_Bear|attack_1; loop: once; duration:3; clampWhenFinished: true;');
+    //});
 };
 
 
-function animate(model, action) {
-    // var skeleton = $('.skeleton')[0];
-    model.setAttribute('animation-mixer', action);
+function animate(model, config) {
+    let animationMixer = 'clip:' + config.clip + ';';
+
+    if (config.loop) {
+        animationMixer += 'loop:' + config.loop + ';';
+    }
+
+    if (config.duration) {
+        animationMixer += 'duration:' + config.duration + ';';
+    }
+
+    model.setAttribute('animation-mixer', animationMixer);
     // model.removeAttribute('animation-mixer');
 }
 

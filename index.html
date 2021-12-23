@@ -25,6 +25,7 @@
         <a-assets>
             <a-asset-item id="animated-skeleton" src="assets/skeleton/scene.gltf"></a-asset-item>
             <a-asset-item id="animated-bear" src="assets/bear_male/scene.gltf"></a-asset-item>
+            <!--<a-asset-item id="animated-bear" src="assets/bear_male/fbx.gltf"></a-asset-item>-->
         </a-assets>
 
         <a-marker id="animated-marker-skeleton"
@@ -46,31 +47,31 @@
         </a-marker>
 
         <!--<a-marker id="animated-marker-bear"
-              type="pattern"
-              preset="custom"
-              url="./assets/ImageVideo/BearMarker/bear-logo-bear-focus-square.patt"
-              raycaster="objects: .clickable"
-              emitevents="true"
-              cursor="fuse: false; rayOrigin: mouse;"
-              smooth="true"
-              smoothCount="2"
-              smoothThreshold="2"
-              smoothTolerance="0.001">-->
-        <!--scale="0.008390502966511827 0.008390502966511827 0.008390502966511827"-->
-        <!--<a-entity id="bowser-model"
-                  position="0 0 -2 0"
-                  rotation="-75 0 0 0"
-                  scale="0.018390502966511827 0.018390502966511827 0.018390502966511827"
-                  animation-mixer="clip: Arm_Bear|Idle_2; loop: repeat;"
-                  gltf-model="#animated-bear"
-                  class="clickable bear"
-                  gesture-handler></a-entity>
-    </a-marker>-->
+                  type="pattern"
+                  preset="custom"
+                  url="./assets/ImageVideo/BearMarker/bear-logo-bear-focus-square.patt"
+                  raycaster="objects: .clickable"
+                  emitevents="true"
+                  cursor="fuse: false; rayOrigin: mouse;"
+                  smooth="true"
+                  smoothCount="2"
+                  smoothThreshold="2"
+                  smoothTolerance="0.001">-->
+            <!--scale="0.008390502966511827 0.008390502966511827 0.008390502966511827"-->
+            <!--<a-entity id="bowser-model"
+                      position="0 0 -2 0"
+                      rotation="-75 0 0 0"
+                      scale="0.018390502966511827 0.018390502966511827 0.018390502966511827"
+                      animation-mixer="clip: Arm_Bear|Idle_2; loop: repeat;"
+                      gltf-model="#animated-bear"
+                      class="clickable bear"
+                      gesture-handler></a-entity>
+        </a-marker>-->
 
 
 
 
-        <a-marker id="animated-marker-bear"
+        <!--<a-marker id="animated-marker-bear"
                   type="pattern"
                   preset="custom"
                   url="./assets/ImageVideo/BearMarker/bear-logo-focus-grey.patt"
@@ -80,11 +81,11 @@
                   smooth="true"
                   smoothCount="2"
                   smoothThreshold="2"
-                  smoothTolerance="0.001">
+                  smoothTolerance="0.001">-->
 
             <!--scale="0.008390502966511827 0.008390502966511827 0.008390502966511827"-->
 
-            <a-entity id="bowser-model"
+            <!--<a-entity id="bowser-model"
                       position="0 0 -2 0"
                       rotation="-75 0 0 0"
                       scale="0.018390502966511827 0.018390502966511827 0.018390502966511827"
@@ -92,7 +93,7 @@
                       gltf-model="#animated-bear"
                       class="clickable bear"
                       gesture-handler></a-entity>
-        </a-marker>
+        </a-marker>-->
 
 
 
@@ -112,8 +113,13 @@
     </a-scene>
 
     <div class="centered">
-        <button class="skeletonBtn" data-action="skeleton">A</button>
-        <button class="bearBtn" data-action="bear">B</button>
+        <!--<button class="skeletonBtn" data-action="skeleton">A</button>
+        <button class="bearBtn" data-action="bear">B</button>-->
+
+
+        <button data-action="aggression-swim">A</button>
+        <!--<button data-action="cycling">B</button>-->
     </div>
+
 </body>
 </html>
