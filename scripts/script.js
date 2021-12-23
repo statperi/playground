@@ -1,11 +1,14 @@
-var action = "Swim_Idle_RM";
+var action = "Swim_forward_RM";
 
 window.onload = () => {
+
+    // Swim_Idle_RM
+    // Swim_forward_RM
 
     document.querySelector('button[data-action="aggression-swim"]').addEventListener('click', function () {
         var bear = $('.bear')[0];
         if (bear) {
-            action = action == "Agression" ? "Swim_Idle_RM" : "Agression";
+            action = action == "Agression" ? "Swim_forward_RM" : "Agression";
             var config = {
                 action: action,
                 clip:'Arm_Bear|'+ action,
