@@ -97,7 +97,7 @@ window.onload = () => {
     document.querySelector('button[data-action="cycling"]').addEventListener('click', function () {
         var bear = $('.bear')[0];
 
-		action = animations[cnt];
+		action = animations[animationIndex];
 		animationIndex++;
 		animationIndex = animations.length != animationIndex ? animationIndex : 0;
 
