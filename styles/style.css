@@ -11,6 +11,20 @@
     right: 0;
 }
 
+.action-centered {
+    height: 8%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
 button {
     display: flex;
     align-items: center;

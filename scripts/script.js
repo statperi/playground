@@ -79,18 +79,10 @@ window.onload = () => {
         var bear = $('.bear')[0];
         if (bear) {
             action = action == "Agression" ? "Swim_forward_RM" : "Agression";
-            //let config = {
-            //    action: action,
-            //    clip:'Arm_Bear|'+ action,
-            //    loop: 'once',
-            //    duration: 3,
-            //    clampWhenFinished: true
-            //}
-
-            //animate(bear, 'clip: Arm_Bear|Death_1; loop: once; duration:3; clampWhenFinished: true;');
-
 			let config = getConfig('Arm_Bear|' + action);
-            animate(bear, config);
+			animate(bear, config);
+
+			//animate(bear, 'clip: Arm_Bear|Death_1; loop: once; duration:3; clampWhenFinished: true;');
         }
     });
 
@@ -102,14 +94,6 @@ window.onload = () => {
 		animationIndex = animations.length != animationIndex ? animationIndex : 0;
 
 		if (bear) {
-			//let config = {
-			//	action: action,
-			//	clip: action,
-			//	loop: 'once',
-			//	duration: 3,
-			//	clampWhenFinished: true
-			//}
-
 			let config = getConfig(action);
 			animate(bear, config);
 		}
