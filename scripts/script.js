@@ -98,8 +98,8 @@ window.onload = () => {
         var bear = $('.bear')[0];
 
 		action = animations[cnt];
-		cnt++;
-		cnt = animations.length != cnt ? cnt : 0;
+		animationIndex++;
+		animationIndex = animations.length != animationIndex ? animationIndex : 0;
 
 		if (bear) {
 			//let config = {
