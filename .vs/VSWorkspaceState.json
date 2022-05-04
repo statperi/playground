@@ -2,14 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\bear_male",
-    "\\assets\\ImageTracking",
-    "\\assets\\ImageVideo\\ArMarker",
-    "\\assets\\ImageVideo\\BearMarker",
-    "\\assets\\ImageVideo\\QrMarkers",
     "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\scripts\\script.js",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
